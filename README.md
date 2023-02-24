@@ -1,7 +1,31 @@
-# Vue 3 + Vite
+# Single-Page Application for Weather Information
+This is a single-page application (SPA) that allows users to obtain the current weather conditions for any city. The application has the following features:
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- A search bar where users can input the name of the city they are interested in knowing the weather conditions.
+- Display of weather information for the currently selected city.
+- The application keeps track of the last five successful search queries, and displays them as clickable buttons.
+- Clicking on one of the previous search queries will populate the search bar with the corresponding city name and display the weather information for that city.
 
-## Recommended IDE Setup
+The weather information is provided in metric units (Celsius). The following information is displayed:
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Temperature
+- Feels like
+- Minimum temperature
+- Maximum temperature
+- Humidity
+
+# Technologies Used
+This application was built using the Vue 3 + Vite + Tailwind framework.
+
+# Getting Started
+To run the application:
+```
+npm run dev
+``` 
+Using an already provided APP ID simplifies the testing process and prevents issues from using an invalid key. It's an acceptable approach as long as it's not used for production purposes.
+
+# Usage
+To use the application, simply type the name of the city you are interested in into the search bar and press "Enter" or click the "Search" button. The application will display the weather information for the specified city.
+
+The last five successful search queries will be displayed as clickable buttons. Clicking on one of these buttons will populate the search bar with the corresponding city name and display the weather information for that city.
+
